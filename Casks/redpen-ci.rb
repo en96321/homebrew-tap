@@ -9,7 +9,7 @@ cask "redpen-ci" do
   homepage "https://github.com/en96321/redpen-ci"
 
   # 依賴 GitHub CLI
-  depends_on cask: "gh"
+  depends_on formula: "gh"
 
   app "RedPen CI.app"
 
