@@ -2,8 +2,8 @@
 # VIP F2E Tool Homebrew Cask
 
 cask "vip-f2e-tool" do
-  version "1.0.2"
-  sha256 "b959eb83cfe326f9910a83f0dd44c97cb5d8e6bf5a0574d749f368bcb497158e"
+  version "1.0.3"
+  sha256 "9195429acc727cdca2cd6917c4520967fba006d6845baac81d651faf99d1593d"
 
   url "https://github.com/en96321/homebrew-tap/releases/download/vip-f2e-tool-#{version}/VIP-F2E-Tool-#{version}.dmg"
   name "VIP F2E Tool"
