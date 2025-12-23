@@ -14,8 +14,7 @@ cask "redpen-ci" do
   app "RedPen CI.app"
 
   zap trash: [
-    "~/Library/Preferences/com.redpen.redpenCiApp.plist",
-    "~/Library/Application Support/com.redpen.redpenCiApp",
+    "~/Library/Preferences/com.en96321.redpenCiApp.plist"
   ]
 
   caveats <<~EOS
