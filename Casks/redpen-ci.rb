@@ -1,6 +1,6 @@
 cask "redpen-ci" do
   version "1.5.0"
-  sha256 "76992ba6e7f520bb72dd6b502fb514f069f4b209dc8298ee6970958361112ede"
+  sha256 "25aa65ab2352eb330e9ae317ee58806653538121bb61177745931b0c6afc00ac"
 
   url "https://github.com/en96321/redpen-ci/releases/download/1.5.0/RedPen_CI_1.5.0.dmg"
   
