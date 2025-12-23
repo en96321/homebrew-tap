@@ -17,13 +17,19 @@ cask "redpen-ci" do
     "~/Library/Preferences/com.en96321.redpenCiApp.plist"
   ]
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/RedPen CI.app"]
+  end
+
   caveats <<~EOS
     #{token} 需要 GitHub CLI 才能正常運作。
     
     安裝後請執行以下命令登入 GitHub:
       gh auth login
     
-    如果出現「此應用程式已損毀」錯誤，請執行:
-      xattr -cr "/Applications/RedPen CI.app"
+    已自動執行 xattr -cr 移除應用程式隔離屬性。
+    如果仍出現「此應用程式已損毀」錯誤，請手動執行:
+      xattr -cr "#{appdir}/RedPen CI.app"
   EOS
 end

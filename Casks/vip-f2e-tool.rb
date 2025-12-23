@@ -20,6 +20,11 @@ cask "vip-f2e-tool" do
     "~/Library/Caches/com.en96321.vipF2eTool",
   ]
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/VIP F2E Tool.app"]
+  end
+
   caveats <<~EOS
     安裝完成後，請確認 GitHub CLI 已登入：
       gh auth login
