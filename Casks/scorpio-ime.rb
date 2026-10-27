@@ -1,7 +1,7 @@
 # Scorpio 智慧注音（由 ScorpioMac/tools/release_brew.sh 產生，版本與 sha256 會自動更新）
 cask "scorpio-ime" do
-  version "0.2.1"
-  sha256 "8fa2db9741f8dc2c38a1e300034c3c1a966542bb0539f800109eca1534e909a9"
+  version "0.2.2"
+  sha256 "3028552e53d451c36bd02714fe3092d8e9670b1c2e259c17cb25b4b55c32b1e2"
 
   url "https://github.com/en96321/homebrew-tap/releases/download/scorpio-ime-#{version}/ScorpioMac-#{version}.zip"
   name "Scorpio 智慧注音"
